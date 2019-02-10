@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-      <div class="top_image"><h1>Akihiro Inui</h1>
+      // Top image
+      <div class="top_image">
+        <h1>Akihiro Inui</h1> // Name
       </div>
   </div>
 </template>
@@ -22,6 +24,7 @@ export default {
 </script>
 
 <style scoped>
+// Style for name
 h1{
   font-size: 3.2vw;
   letter-spacing: 0.2vw;
