@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="portfolio">
       // Top image
       <div class="top_image">
         <h1>Akihiro Inui</h1> // Name
