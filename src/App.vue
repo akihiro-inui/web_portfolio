@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+// Fix screen size
 html, body {
     margin: 0;
     padding: 0;
@@ -22,6 +23,8 @@ html, body {
   text-align: center;
   color: #2c3e50;
 }
+
+// Top image
 .top_image{    
     height: 100vh;
     background-image : url("./assets/background.png");
