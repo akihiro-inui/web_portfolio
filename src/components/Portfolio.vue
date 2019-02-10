@@ -1,9 +1,11 @@
 <template>
   <div class="portfolio">
-      // Top image
+      <!-- Top image -->
       <div class="top_image">
-        <h1>Akihiro Inui</h1> // Name
+        <!-- Name -->
+        <h1>Akihiro Inui</h1> 
       </div>
+      <!-- Top image end -->
   </div>
 </template>
 
