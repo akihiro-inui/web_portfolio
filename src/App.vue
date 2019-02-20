@@ -11,10 +11,9 @@ export default {
 </script>
 
 <style>
-/* Fix screen size */
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -23,12 +22,10 @@ html, body {
   text-align: center;
   color: white;
 }
-
-/*  Top image */
-.top_image{    
-    height: 100vh;
-    background-image : url("./assets/background.png");
-    background-size: cover;
-    display: block;
+.top_image{
+  height: 100vh;
+  background-image : url("./assets/background.png");
+  background-size: cover;
+  display: block;
 }
 </style>

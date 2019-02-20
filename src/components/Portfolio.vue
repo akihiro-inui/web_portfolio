@@ -39,7 +39,6 @@ export default {
       showText: true
     }
   },
-
   // Define custom functions here
   methods: {
   }
