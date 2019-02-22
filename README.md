@@ -5,6 +5,15 @@
 ## Build Setup
 
 ``` bash
+# Build Docker Container Image
+docker-copmose build
+
+# Launch Docker Container
+docker-compose up -d
+
+# Go into container
+docker-compose exec vue_app sh
+
 # install dependencies
 npm install
 
@@ -12,5 +21,3 @@ npm install
 npm run dev
 
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
