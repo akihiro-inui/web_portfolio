@@ -11,9 +11,9 @@ export default {
 </script>
 
 <style>
-html, body {
-  margin: 0;
+*{
   padding: 0;
+  margin: 0;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -23,6 +23,7 @@ html, body {
   color: white;
 }
 .top_image{
+  position: relative;
   height: 100vh;
   background-image : url("./assets/background.png");
   background-size: cover;
