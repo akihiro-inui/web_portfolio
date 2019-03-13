@@ -4,21 +4,22 @@
       <div class="top_image">
         <!--Menu bar-->
         <div class="menu">
+          <p class="title">Portfolio of Akihiro Inui</p>
           <ul>
             <li>
-              <a href="">ABOUT</a>
+              <a href="" class="menu_button">ABOUT</a>
             </li>
             <li>
-              <a href="">EDUCATION</a>
+              <a href="" class="menu_button">EDUCATION</a>
             </li>
             <li>
-              <a href="">PROJECTS</a>
+              <a href="" class="menu_button">PROJECTS</a>
             </li>
             <li>
-              <a href="">SKILLS</a>
+              <a href="" class="menu_button">SKILLS</a>
             </li>
             <li>
-              <a href="">CONTACT</a>
+              <a href="" class="menu_button">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -28,6 +29,7 @@
         <a href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</a>
       </div>
       <!-- End Top image -->
+      <div class="about"></div>
   </div>
 </template>
 
@@ -55,7 +57,6 @@ export default {
     // Overwrite
     padding: 1vh 1vw;
 }
-
 // Name
 h1{
   font-size: 3.2vw;
@@ -64,22 +65,6 @@ h1{
   text-align: center;
   padding-top: 35vh;
 }
-
 // Menu Bar
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-li {
-  display: inline-block;
-  padding: 0 5vh;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  border-bottom: solid 1px;
-}
+@import "../styles/menu/menu_bar";
 </style>

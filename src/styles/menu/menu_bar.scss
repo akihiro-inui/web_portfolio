@@ -1,0 +1,45 @@
+.menu_button{
+    position: relative;
+    text-decoration: none;
+    padding: 0.3em;
+    margin: 0.3em 1em;
+    color: #ffff;
+    transition: all 0.4s;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.4s;
+        border-top: 1px solid rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        transform: scale(1.5,1.5);
+    }
+    &:hover::after {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+.menu{
+    position: fixed;
+    height: 8vh;
+    width: 100vw;
+}
+.title{
+    padding-top:2.2vh;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    text-align: left;
+    float: left;
+}
+ul {
+    padding-top: 2.2vh;
+    list-style-type: none;
+    text-align: right;
+    li {
+        display: inline-block;
+    }
+}
