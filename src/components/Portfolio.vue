@@ -1,32 +1,36 @@
 <template>
   <div class="portfolio">
+      <div class="menu"><!--Menu bar-->
+        <p class="title">Badass Portfolio of Obi-Wan Kenobi</p>
+        <ul>
+          <li>
+            <a href="#about" class="menu_button">ABOUT</a>
+          </li>
+          <li>
+            <a href="" class="menu_button">EDUCATION</a>
+          </li>
+          <li>
+            <a href="" class="menu_button">PROJECTS</a>
+          </li>
+          <li>
+            <a href="" class="menu_button">SKILLS</a>
+          </li>
+          <li>
+            <a href="" class="menu_button">CONTACT</a>
+          </li>
+        </ul>
+      </div><!--End Menu bar-->
       <div class="top_image"><!-- Top image -->
-        <div class="menu"><!--Menu bar-->
-          <p class="title">Badass Portfolio of Obi-Wan Kenobi</p>
-          <ul>
-            <li>
-              <a href="" class="menu_button">ABOUT</a>
-            </li>
-            <li>
-              <a href="" class="menu_button">EDUCATION</a>
-            </li>
-            <li>
-              <a href="" class="menu_button">PROJECTS</a>
-            </li>
-            <li>
-              <a href="" class="menu_button">SKILLS</a>
-            </li>
-            <li>
-              <a href="" class="menu_button">CONTACT</a>
-            </li>
-          </ul>
-        </div><!--End Menu bar-->
         <!-- Name -->
-        <h1>Obi-Wan</h1>
+        <h1>{{titleName}}</h1>
           <button href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</button>
       </div><!-- End Top image -->
       <!-- End Top image -->
-      <div class="about"></div>
+      <div id="about"><!-- about -->
+        <div>
+          <h1 class="about_item" data-aos="fade-up-left" data-aos-duration="600">ABOUT</h1>
+        </div>
+      </div><!-- End about-->
   </div>
 </template>
 
@@ -35,8 +39,7 @@ export default {
   name: 'Portfolio',
   data () {
     return {
-      text: 'Akihiro Inui',
-      showText: true
+      titleName: 'Obi-Wan'
     }
   },
   // Define custom functions here
@@ -68,4 +71,14 @@ h1{
   text-align: center;
   padding-top: 35vh;
 }
+#about{
+  height: 100vh;
+  background-color: rgb(151, 151, 151);
+}
+.about_item{
+  padding-top: 30vh;
+  font-size: 5vw;
+  color: #ffffff;
+}
+
 </style>
