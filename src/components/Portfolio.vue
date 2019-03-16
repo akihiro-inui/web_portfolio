@@ -21,14 +21,18 @@
         </ul>
       </div><!--End Menu bar-->
       <div class="top_image"><!-- Top image -->
-        <!-- Name -->
         <h1>{{titleName}}</h1>
           <button href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</button>
       </div><!-- End Top image -->
       <!-- End Top image -->
       <div id="about"><!-- about -->
         <div>
-          <h1 class="about_item" data-aos="fade-up-left" data-aos-duration="600">ABOUT</h1>
+          <h2 class="about_title" data-aos="fade-up-left" data-aos-duration="600">ABOUT</h2>
+          <div class = "about_sentence">
+            <p>I am a Jedi master</p>
+            <p>I hate Darth Vader and tomato</p>
+            <p>May the force be with you</p>
+          </div>
         </div>
       </div><!-- End about-->
   </div>
@@ -75,10 +79,15 @@ h1{
   height: 100vh;
   background-color: rgb(151, 151, 151);
 }
-.about_item{
-  padding-top: 30vh;
+.about_title{
+  padding-top: 25vh;
   font-size: 5vw;
   color: #ffffff;
 }
-
+.about_sentence{
+  float: center;
+  font-size:1.5em;
+  padding-top: 8vh;
+  line-height: 10vh;
+}
 </style>
