@@ -1,10 +1,8 @@
 <template>
   <div class="portfolio">
-      <!-- Top image -->
-      <div class="top_image">
-        <!--Menu bar-->
-        <div class="menu">
-          <p class="title">Portfolio of Akihiro Inui</p>
+      <div class="top_image"><!-- Top image -->
+        <div class="menu"><!--Menu bar-->
+          <p class="title">Badass Portfolio of Obi-Wan Kenobi</p>
           <ul>
             <li>
               <a href="" class="menu_button">ABOUT</a>
@@ -22,12 +20,11 @@
               <a href="" class="menu_button">CONTACT</a>
             </li>
           </ul>
-        </div>
-        <!--End Menu bar-->
+        </div><!--End Menu bar-->
         <!-- Name -->
-        <h1>Akihiro Inui</h1>
-        <a href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</a>
-      </div>
+        <h1>Obi-Wan</h1>
+          <button href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</button>
+      </div><!-- End Top image -->
       <!-- End Top image -->
       <div class="about"></div>
   </div>
@@ -49,22 +46,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Download Resume Button
+// Import scss
 @import "../styles/button/square_move_button";
+@import "../styles/menu/menu_bar";
+
+// Overwrite custom scss components
 .download_cv_button{
     // Import button
     @extend .square_move_button;
-    // Overwrite
-    padding: 1vh 1vw;
+    padding: 1.5vh 1.5vw;
+    margin-top:20vh;
+    text-align: center;
+    float: center;
 }
-// Name
+
+// Name TODO: to be scss
 h1{
-  font-size: 3.2vw;
+  font-size: 50px;
   letter-spacing: 0.2vw;
   font-weight: normal;
   text-align: center;
   padding-top: 35vh;
 }
-// Menu Bar
-@import "../styles/menu/menu_bar";
 </style>
