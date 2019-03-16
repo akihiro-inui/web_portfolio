@@ -26,14 +26,12 @@
       </div><!-- End Top image -->
       <!-- End Top image -->
       <div id="about"><!-- about -->
-        <div>
           <h2 class="about_title" data-aos="fade-up-left" data-aos-duration="600">ABOUT</h2>
           <div class = "about_sentence">
             <p>I am a Jedi master</p>
             <p>I hate Darth Vader and tomato</p>
             <p>May the force be with you</p>
           </div>
-        </div>
       </div><!-- End about-->
   </div>
 </template>
