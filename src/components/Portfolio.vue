@@ -7,42 +7,48 @@
             <a href="#about" class="menu_button">ABOUT</a>
           </li>
           <li>
-            <a href="" class="menu_button">EDUCATION</a>
+            <a href="#education" class="menu_button">EDUCATION</a>
           </li>
           <li>
-            <a href="" class="menu_button">PROJECTS</a>
+            <a href="#projects" class="menu_button">PROJECTS</a>
           </li>
           <li>
-            <a href="" class="menu_button">SKILLS</a>
+            <a href="#skills" class="menu_button">SKILLS</a>
           </li>
           <li>
-            <a href="" class="menu_button">CONTACT</a>
+            <a href="#contact" class="menu_button">CONTACT</a>
           </li>
         </ul>
       </div><!--End Menu bar-->
       <div class="top_image"><!-- Top image -->
-        <h1>{{titleName}}</h1>
+        <h1>Obi-Wan</h1>
           <button href="AkihiroInuiCV.pdf" class="download_cv_button" download="AkihiroInuiCV.pdf">Download Resume</button>
       </div><!-- End Top image -->
       <!-- End Top image -->
-      <div id="about"><!-- about -->
-          <h2 class="about_title" data-aos="fade-up-left" data-aos-duration="600">ABOUT</h2>
-          <div class = "about_sentence">
-            <p>I am a Jedi master</p>
-            <p>I hate Darth Vader and tomato</p>
-            <p>May the force be with you</p>
-          </div>
-      </div><!-- End about-->
+      <About></About><!-- ABOUT -->
+      <Education></Education><!-- EDUCATION -->
+      <Projects></Projects><!-- PROJECTS -->
+      <Skills></Skills><!-- SKILLS -->
+      <Contact></Contact><!-- CONTACT -->
   </div>
 </template>
 
 <script>
+// Import vue file
+import About from './About.vue'
+import Education from './Education.vue'
+import Projects from './Projects.vue'
+import Skills from './Skills.vue'
+import Contact from './Contact.vue'
+
 export default {
   name: 'Portfolio',
-  data () {
-    return {
-      titleName: 'Obi-Wan'
-    }
+  components: {
+    About,
+    Education,
+    Projects,
+    Skills,
+    Contact
   },
   // Define custom functions here
   methods: {
@@ -72,20 +78,5 @@ h1{
   font-weight: normal;
   text-align: center;
   padding-top: 35vh;
-}
-#about{
-  height: 100vh;
-  background-color: rgb(151, 151, 151);
-}
-.about_title{
-  padding-top: 25vh;
-  font-size: 5vw;
-  color: #ffffff;
-}
-.about_sentence{
-  float: center;
-  font-size:1.5em;
-  padding-top: 8vh;
-  line-height: 10vh;
 }
 </style>
