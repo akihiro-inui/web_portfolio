@@ -1,10 +1,18 @@
 <template>
 <div id="projects">
     <h2 id="projects_title">PROJECTS</h2>
+            <!-- <div id="root_isotope" class="isoDefault">
+                <div v-isotope-for="element in data"  @click="selected=element">
+                    {{element.name}}
+                <br> {{element.id}}
+                </div>
+            </div> -->
 </div>
 </template>
 
 <script>
+// Import variables from global.js
+import project_data from "../global.js"
 export default {
 }
 </script>

@@ -16,8 +16,10 @@
   "dependencies": {
     "@types/aos": "^3.0.1",
     "aos": "^2.3.4",
+    "isotope-layout": "^3.0.6",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vueisotope": "^3.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
