@@ -8,5 +8,3 @@ jobs:
         - run: docker-compose up -d
         - run: docker-compose exec vue_app sh
         - run: npm install
-        - run: npm run dev
-        
