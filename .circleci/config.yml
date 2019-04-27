@@ -7,9 +7,12 @@ jobs:
     - checkout
     - run:
         name: Build Docker Container
-        command: |
-          docker-copmose build
-          docker-compose up -d
+        command: docker-compose build
+    - run:
+        name: Run Docker Container
+        command: docker-compose up -d
     - run:
         name: Install Requirements
-        command: npm install
+        command: |
+          docker-compose exec vue_app
+          npm install
