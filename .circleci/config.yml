@@ -16,4 +16,7 @@ jobs:
         command: docker-compose exec vue_app sh
     - run:
         name: Install Requirements
-        command: docker-compose exec vue_app sh
+        command: npm install
+    - run:
+        name: Build
+        command: npm run dev
