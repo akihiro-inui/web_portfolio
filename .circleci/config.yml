@@ -12,8 +12,7 @@ jobs:
         name: Run Docker Container
         command: docker-compose up -d
     - run:
-        name: Move into container
-        command: docker-compose exec vue_app
-    - run:
         name: Install Requirements
-        command: npm install
+        command: |
+        docker-compose exec vue_app sh
+        npm install
