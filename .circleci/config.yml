@@ -4,8 +4,7 @@ jobs:
     machine: true # Use a Linux VM instead of docker environment
     working_directory: ~/web_platform # Default working directory, where your project will be cloned
     steps:
-        - checkout
-        - run:
+    - checkout
+    - run:
         name: Install Requirements
-        command: |
-          npm install
+        command: npm install
