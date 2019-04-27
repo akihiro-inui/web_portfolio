@@ -6,5 +6,10 @@ jobs:
     steps:
     - checkout
     - run:
+        name: Build Docker Container
+        command: |
+          docker-copmose build
+          docker-compose up -d
+    - run:
         name: Install Requirements
         command: npm install
