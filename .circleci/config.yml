@@ -1,0 +1,12 @@
+version: 2 # CircleCI version
+jobs:
+  build:
+    machine: true # Use a Linux VM instead of docker environment
+    working_directory: ~/web_platform # Default working directory, where your project will be cloned
+    steps:
+        - checkout
+        - run: docker-compose up -d
+        - run: docker-compose exec vue_app sh
+        - run: npm install
+        - run: npm run dev
+        
