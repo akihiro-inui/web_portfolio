@@ -11,13 +11,10 @@ docker-copmose build
 # Launch Docker Container
 docker-compose up -d
 
-# Go into container
-docker-compose exec vue_app sh
-
-# install dependencies
-npm install
+# Install dependencies
+docker-compose run vue_app npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+docker-compose run vue_app npm run dev
 
 ```
