@@ -5,6 +5,7 @@ jobs:
     working_directory: ~/web_platform # Default working directory, where your project will be cloned
     steps:
         - checkout
-        - run: docker-compose up -d
-        - run: docker-compose exec vue_app sh
-        - run: npm install
+        - run:
+        name: Install Requirements
+        command: |
+          npm install
