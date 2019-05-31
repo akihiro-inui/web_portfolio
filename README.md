@@ -12,7 +12,7 @@ docker-compose build
 docker-compose up -d
 
 # Go to runing Docker container
-docker-compose exec vue_app
+docker-compose exec vue_app sh
 
 # Install dependencies
 npm install
