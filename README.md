@@ -6,15 +6,18 @@
 
 ``` bash
 # Build Docker Container Image
-docker-copmose build
+docker-compose build
 
 # Launch Docker Container
 docker-compose up -d
 
+# Go to runing Docker container
+docker-compose exec vue_app
+
 # Install dependencies
-docker-compose run vue_app npm install
+npm install
 
 # serve with hot reload at localhost:8080
-docker-compose run vue_app npm run dev
+npm run dev
 
 ```
